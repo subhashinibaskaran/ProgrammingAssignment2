@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
   }
   data <- x$get()
   message("Calculating the inverse of the matrix for the first time")
-  inv <- solve(data)
+  inv <- solve(data, ...)
   x$setinverse(inv)
   inv
 }
